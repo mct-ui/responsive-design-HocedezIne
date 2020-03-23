@@ -41,13 +41,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 768px){
-    html{
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
-
 *,
 *:before,
 *:after {
@@ -347,6 +340,26 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+/*
+    Component: Logo
+    ---
+    Website main logo
+*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
+
+/* @media (min-width: 768px) {
+    .c-logo__symbol {
+    }
+} */
+
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
@@ -607,6 +620,15 @@ a:focus {
 /* Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 */
+@media (min-width: 768px){
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .c-logo{
+        height: 40px;
+    }
+}
 
 /* Large devices (landscape tablets, desktops, 992px and up)
 @media (min-width: 992px) {}
