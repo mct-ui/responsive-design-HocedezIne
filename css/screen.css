@@ -570,7 +570,7 @@ a:focus {
     color: #7373F5;
 }
 
-.c-link-cta::after {
+.c-link-cta::before{
     content: "";
     display: block;
     position: absolute;
@@ -579,12 +579,10 @@ a:focus {
     height: 1px;
     width: 100%;
     background-color: #7373f5;
-}
 
-.c-link-cta::before{
     transform: scaleX(.5);
     transform-origin: left;
-    transition-property: transform background-color;
+    transition-property: transform, background-color;
     transition-duration: .175s;
     transition-timing-function: ease-in;
 }
@@ -593,22 +591,11 @@ a:focus {
     color: #3E3EA8;
 }
 
-.c-link-cta:hover::after {
+.c-link-cta:hover::before {
     transform: scaleX(1);
     background-color: #3e3ea8;
 }
 
-.c-link-cta--inverse, .c-link-cta--inverse:visited, .c-link-cta--inverse:active{
-    color: #ffffff;
-}
-
-.c-link-cta--inverse::after{
-    background-color: #fff;
-}
-
-.c-link-cta--inverse:hover::after{
-    background-color: #fff;
-}
 
 /*
     Component: footer
